@@ -1,0 +1,97 @@
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: #fff;
+  color: #111;
+  font-size: 1.6rem;
+}
+
+abbr[title] {
+  cursor: help;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+.App {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  min-height: inherit;
+}
+
+.App::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: hsla(357, 54%, 5%, 0.7);
+  animation: pulse 6s ease-in-out infinite alternate;
+}
+
+.App::after {
+  content: '';
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url("https://shinsegae-inc.com/images/common/img_vision.png") no-repeat center / cover;
+}
+
+.Logo {
+  animation: spin 20s linear infinite;
+  animation-play-state: running;
+  transition: scale 0.3s ease-in-out;
+  filter: contrast(100%) hue-rotate(345deg) blur(1.2px);
+}
+
+.Headline {
+  margin: 0.8rem 0 0.2rem;
+  color: hsl(0, 3%, 97%);
+  font-size: 3rem;
+  text-shadow: 0 4px 10px rgba(0 0 0 / 30%);
+}
+
+.Description {
+  margin: 0;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: hsl(0, 8%, 83%);
+  text-shadow: 0 2px 10px rgba(0 0 0 / 30%);
+}
+
+@keyframes spin {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+
+@keyframes pulse {
+  50% {
+    background: hsla(357, 54%, 5%, 0.8);
+    filter: blur(6px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .Logo {
+    animation-play-state: paused;
+  }
+}
