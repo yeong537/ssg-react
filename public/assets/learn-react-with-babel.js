@@ -41,7 +41,7 @@ const App = () => (
 
 // JSX = XML like syntax for ECMAScript(JavaScript)
 
-// React.createElement(React.StrictMode)
+React.createElement(React.StrictMode);
 
 ReactDOM.createRoot(container).render(
   <React.StrictMode>
