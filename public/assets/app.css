@@ -24,6 +24,10 @@ img {
   vertical-align: bottom;
 }
 
+#root {
+  min-height: inherit;
+}
+
 .App {
   position: relative;
   display: flex;
