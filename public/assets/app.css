@@ -10,6 +10,10 @@ body {
   font-size: 1.6rem;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 abbr[title] {
   cursor: help;
   text-decoration: none;
