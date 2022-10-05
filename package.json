@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "name": "ssg-react-manual-configuration",
+  "version": "1.0.0",
+  "description": "React 프레임워크 개발에 적합하지 않은 웹 환경을 벗어나 Node.js 환경에서 애플리케이션을 개발할 수 있는 환경 직접 구성하는 방법을 학습합니다.",
+  "scripts": {}
+}
