@@ -10,4 +10,6 @@ const devConfig = merge(commonConfig, {
   },
 });
 
+// console.log('MODE =', process.env.NODE_ENV);
+
 module.exports = devConfig;
