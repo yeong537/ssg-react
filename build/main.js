@@ -1,1 +1,0 @@
-(()=>{"use strict";((r,o=10)=>{Array(o).fill(null).forEach(r)})((()=>console.log(((r=0,o=100)=>{return r>=o&&(r=>{throw new Error("min 값이 max 값보다 크거나 같습니다.")})(),a=o-r,Math.round(Math.random()*a)+r;var a})(1,6))),20)})();
